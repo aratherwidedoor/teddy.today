@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynmap - teddy.today</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(86, 133, 209);
+            font-family: 'Press Start 2P', cursive;
+            color: azure;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h3 {
+            margin: 20px 0;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            background-color: rgba(0,0,0,0.3);
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: azure;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* MAP CONTAINER */
+        .map-container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 40px auto;
+            border: 4px solid azure;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 70vh;
+            border: none;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* RESPONSIVE */
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .map-container iframe {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <h1>teddy.today</h1>
+    <h3>Server Dynmap</h3>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="dynmap.html">Dynmap</a>
+        <a href="blog.html">About Me</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- MAP SECTION -->
+    <div class="map-container">
+        <iframe src="http://willpower-finds.gl.at.ply.gg:40916/"></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 Theodore Hunt. All rights reserved.
+    </footer>
+
+</body>
+</html>
