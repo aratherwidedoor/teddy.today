@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1VKYC61KZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L1VKYC61KZ');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - teddy.today</title>
@@ -47,12 +56,23 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 0 20px;
+            text-align: left; /* better for paragraphs and lists */
         }
 
         .section p {
             line-height: 1.8;
             font-size: 14px;
             margin-bottom: 25px;
+        }
+
+        .section ul {
+            list-style-position: inside;
+            line-height: 2;
+            padding: 0;
+        }
+
+        .section a {
+            color: azure;
         }
 
         footer {
@@ -89,29 +109,22 @@
     <!-- ABOUT ME CONTENT -->
     <div class="section">
         <p>
-         <div class="section">
-    <p>
-        Hey! i’m theodore, a 14 year old tech enthusiast and event coordinator and I... 
-    </p>
+            Hey! i'm theodore, a 14 year old tech enthusiast and event coordinator and I...
+        </p>
 
-    <ul style="list-style-position: inside; padding: 0; line-height: 2;">
-        <li>code websites and small-scale datapacks for minecraft</li>
-        <li>coordinate events such as the second biggest homeschool prom in the nation
-            (<a href="https://heartlandhomeschoolprom.com" target="_blank" style="color: azure;">
-                heartlandhomeschoolprom.com
-            </a>)
-        </li>
-        <li>modify computer keyboards, mice, and fix computers</li>
-    </ul>
+        <ul>
+            <li>code websites and small scale datapacks for minecraft</li>
+            <li>Coordinate events such as the second biggest homeschool prom in the nation
+                (<a href="https://heartlandhomeschoolprom.com" target="_blank">heartlandhomeschoolprom.com</a>)
+            </li>
+            <li>Modify computer keyboards, mice, and fix computers</li>
+        </ul>
 
-    <p style="margin-top: 30px;">
-       need to contact me? send me a email at
-        <a href="mailto:theodorehunt1593@gmail.com" style="color: azure;">
-            theodorehunt1593@gmail.com
-        </a> :D
-    </p>
-</div>
-
+        <p>
+            Need to contact me? Send an email at 
+            <a href="mailto:theodorehunt1593@gmail.com">theodorehunt1593@gmail.com</a> :D
+        </p>
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -120,3 +133,4 @@
 
 </body>
 </html>
+
